@@ -1,0 +1,4 @@
+cloudfss private maven repository for 3rd party library not in central maven 
+ repository, inclouds:
+1.log4jdbc
+
