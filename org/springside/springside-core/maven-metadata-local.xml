@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.springside</groupId>
+  <artifactId>springside-core</artifactId>
+  <versioning>
+    <versions>
+      <version>4.0.0.RC4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120516143839</lastUpdated>
+  </versioning>
+</metadata>
