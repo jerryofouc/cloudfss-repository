@@ -7,13 +7,9 @@
 	<version>4.0.0.RC4-SNAPSHOT</version>
 	<name>Springside :: Project</name>
 	<packaging>pom</packaging>
+
 	<modules>
-		<module>modules/parent</module>
-		<module>modules/core</module>
-		<module>modules/extension</module>
-		<module>modules/test</module>
-		<module>examples/mini-service</module>
-		<module>examples/mini-web</module>
-		<module>examples/showcase</module>
+		<module>modules</module>
+		<module>examples</module>
 	</modules>
 </project>
