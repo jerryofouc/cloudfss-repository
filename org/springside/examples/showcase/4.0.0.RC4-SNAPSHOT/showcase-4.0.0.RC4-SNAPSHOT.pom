@@ -71,10 +71,10 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-ehcache</artifactId>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.0-api</artifactId>
 		</dependency>
-		
+
 		<!-- mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -133,8 +133,52 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
 		<!-- WEB end -->
-		
+
+		<!-- SOAP begin -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+		</dependency>
+		<!-- SOAP end -->
+
+		<!-- REST begin -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-servlet</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-spring</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-multipart</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+		</dependency>
+		<!-- REST end -->
+
 		<!-- SECURITY begin -->
 		<dependency>
 			<groupId>org.apache.shiro</groupId>
@@ -153,17 +197,6 @@
 			<artifactId>shiro-ehcache</artifactId>
 		</dependency>
 		<!-- SECURITY end -->
-		
-		<!-- SOAP begin -->
-		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-frontend-jaxws</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.cxf</groupId>
-			<artifactId>cxf-rt-transports-http</artifactId>
-		</dependency>
-		<!-- SOAP end -->
 
 		<!-- JMS begin -->
 		<dependency>
@@ -201,29 +234,17 @@
 			<artifactId>ehcache-core</artifactId>
 		</dependency>
 		<!-- CACHE end -->
-		
-		<!-- jolokia Restful JMX -->
-		<dependency>
-			<groupId>org.jolokia</groupId>
-			<artifactId>jolokia-core</artifactId>
-		</dependency>
-				
-		<!-- JSR303  BeanValidator -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-		</dependency>
-		
+
 		<!-- JSON -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.fasterxml.jackson.module</groupId>
-			<artifactId>jackson-module-jaxb-annotations</artifactId>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
 		</dependency>
-		
+
 		<!-- XML begin -->
 		<dependency>
 			<groupId>dom4j</groupId>
@@ -234,8 +255,8 @@
 			<groupId>jaxen</groupId>
 			<artifactId>jaxen</artifactId>
 		</dependency>
-		<!-- XML end -->	
-		
+		<!-- XML end -->
+
 		<!-- LOGGING begin -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -254,8 +275,8 @@
 			<artifactId>log4j</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.lazyluke</groupId>
-			<artifactId>log4jdbc-remix</artifactId>
+			<groupId>log4jdbc</groupId>
+			<artifactId>log4jdbc4</artifactId>
 		</dependency>
 		<!-- LOGGING end -->
 
@@ -265,12 +286,12 @@
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
@@ -283,7 +304,7 @@
 		</dependency>
 		<!-- GENERAL UTILS end -->
 
-		<!-- OTHER TOOLS begin -->
+		<!-- OTHER UTILS begin -->
 		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
@@ -295,8 +316,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.sf.dozer</groupId>
-			<artifactId>dozer</artifactId>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+		</dependency>
+
+		<!-- jolokia Restful JMX -->
+		<dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
 		</dependency>
 
 		<!-- email -->
@@ -308,7 +335,7 @@
 			<groupId>javax.activation</groupId>
 			<artifactId>activation</artifactId>
 		</dependency>
-		<!-- OTHER TOOLS end -->
+		<!-- OTHER UTILS end -->
 
 		<!-- TEST begin -->		
 		<dependency>
@@ -361,6 +388,17 @@
 			<artifactId>dbunit</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
+		<!-- mail server simulator -->
+		<dependency>
+			<groupId>com.icegreen</groupId>
+			<artifactId>greenmail</artifactId>
+		</dependency>
+		
 		<!-- jetty for functional test and executable war -->
 		<dependency>
 			<groupId>org.eclipse.jetty.aggregate</groupId>
@@ -371,18 +409,6 @@
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-jsp</artifactId>
 			<scope>provided</scope>
-		</dependency>
-		
-		<!-- h2 -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-		</dependency>
-
-		<!-- mail server simulator -->
-		<dependency>
-			<groupId>com.icegreen</groupId>
-			<artifactId>greenmail</artifactId>
 		</dependency>
 		<!-- TEST end -->
 	</dependencies>
@@ -408,8 +434,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
-			<!-- test插件,设定內存 -->
+			<!-- test插件,设定內存/ClassLoader -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -463,17 +488,31 @@
 					</webAppConfig>
 				</configuration>
 			</plugin>
-			
-			<!-- enforcer, 规则统一定义在parent -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-			</plugin>
 		</plugins>
 	</build>
 
 	<profiles>
-		<!-- 执行functional test -->
+		<!-- 仅执行smoke test -->
+		<profile>
+			<id>smoke-test</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<configuration>
+							<!-- 在parent的profile的基础上进一步定义 -->
+							<useSystemClassLoader>false</useSystemClassLoader>
+							<systemPropertyVariables>
+								<selenium.driver>${selenium.driver}</selenium.driver>
+							</systemPropertyVariables>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!-- 执行所有functional test -->
 		<profile>
 			<id>functional-test</id>
 			<build>
@@ -482,13 +521,8 @@
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
-							<argLine>-Xmx256M -XX:MaxPermSize=128m</argLine>
-							<includes>
-								<include>**/*FT.java</include>
-							</includes>
-							<!-- 支持taglib tld文件查找的必要设置 -->
+							<!-- 在parent的profile的基础上进一步定义 -->
 							<useSystemClassLoader>false</useSystemClassLoader>
-							<!-- 将由mvn命令行-Dselenium.driver传到surefire的JVM中 -->
 							<systemPropertyVariables>
 								<selenium.driver>${selenium.driver}</selenium.driver>
 							</systemPropertyVariables>
@@ -508,8 +542,7 @@
 						<artifactId>maven-antrun-plugin</artifactId>
 						<configuration>
 							<target>
-								<property file="src/main/resources/application.development-local.properties" />
-								<property file="src/main/resources/application.development.properties" />
+								<property file="src/main/resources/application.local.properties" />
 								<property file="src/main/resources/application.properties" />
 
 								<property name="sql.type" value="h2" />

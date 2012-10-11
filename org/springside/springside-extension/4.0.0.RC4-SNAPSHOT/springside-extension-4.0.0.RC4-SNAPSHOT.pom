@@ -25,26 +25,11 @@
 			<artifactId>spring-context</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
-		<!-- WEB begin -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<!-- WEB end -->
 
 		<!-- CACHE -->
 		<dependency>
 			<groupId>spy</groupId>
 			<artifactId>spymemcached</artifactId>
-			<optional>true</optional>
-		</dependency>
-		
-		<!-- freemarker -->
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
 			<optional>true</optional>
 		</dependency>
 		
@@ -97,6 +82,14 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 		</dependency>
@@ -127,12 +120,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			
-			<!-- enforcer, 规则统一定义在parent -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-			</plugin>			
 		</plugins>
 	</build>
 </project>

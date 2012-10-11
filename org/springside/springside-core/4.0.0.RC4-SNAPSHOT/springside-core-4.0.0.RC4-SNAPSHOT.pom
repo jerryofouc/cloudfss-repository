@@ -13,12 +13,6 @@
 	<name>Springside :: Module :: Core</name>
 
 	<dependencies>
-		<!-- SPRING begin -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-		</dependency>
-		<!-- SPRING end -->
 		<!-- PERSISTENCE begin -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -26,6 +20,27 @@
 			<optional>true</optional>
 		</dependency>
 		<!-- PERSISTENCE end -->
+
+		<!-- WEB begin -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- WEB end -->
+
+		<!-- REST begin -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<!-- REST end -->
 
 		<!-- UTILS begin -->
 		<dependency>
@@ -49,11 +64,6 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 			<optional>true</optional>
@@ -61,7 +71,6 @@
 		<dependency>
 		  <groupId>com.fasterxml.jackson.module</groupId>
 		  <artifactId>jackson-module-jaxb-annotations</artifactId>
-		  <optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.dozer</groupId>
@@ -69,6 +78,11 @@
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<optional>true</optional>
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
@@ -113,15 +127,18 @@
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -157,12 +174,6 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
-			
-			<!-- enforcer, 规则统一定义在parent -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>

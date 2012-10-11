@@ -4,8 +4,10 @@
   <artifactId>springside-parent</artifactId>
   <versioning>
     <versions>
+      <version>4.0.0.RC5-SNAPSHOT</version>
       <version>4.0.0.RC4-SNAPSHOT</version>
+      <version>4.0.0.GA-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20120820131424</lastUpdated>
+    <lastUpdated>20120903073906</lastUpdated>
   </versioning>
 </metadata>

@@ -4,8 +4,9 @@
   <artifactId>quickstart</artifactId>
   <versioning>
     <versions>
-      <version>4.0.0.RC4-SNAPSHOT</version>
+      <version>4.0.0.RC5-SNAPSHOT</version>
+      <version>4.0.0.GA-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20120820131437</lastUpdated>
+    <lastUpdated>20120903073924</lastUpdated>
   </versioning>
 </metadata>

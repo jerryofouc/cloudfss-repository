@@ -5,7 +5,8 @@
   <versioning>
     <versions>
       <version>4.0.0.RC4-SNAPSHOT</version>
+      <version>4.0.0.GA-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20120820131449</lastUpdated>
+    <lastUpdated>20120903074030</lastUpdated>
   </versioning>
 </metadata>
