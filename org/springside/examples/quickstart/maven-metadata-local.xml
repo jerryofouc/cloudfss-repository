@@ -3,10 +3,10 @@
   <groupId>org.springside.examples</groupId>
   <artifactId>quickstart</artifactId>
   <versioning>
+    <release>4.0.0.GA</release>
     <versions>
-      <version>4.0.0.RC5-SNAPSHOT</version>
-      <version>4.0.0.GA-SNAPSHOT</version>
+      <version>4.0.0.GA</version>
     </versions>
-    <lastUpdated>20120903073924</lastUpdated>
+    <lastUpdated>20130423030427</lastUpdated>
   </versioning>
 </metadata>

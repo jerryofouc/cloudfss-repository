@@ -3,10 +3,10 @@
   <groupId>org.springside</groupId>
   <artifactId>springside-modules</artifactId>
   <versioning>
+    <release>4.0.0.GA</release>
     <versions>
-      <version>4.0.0.RC5-SNAPSHOT</version>
-      <version>4.0.0.GA-SNAPSHOT</version>
+      <version>4.0.0.GA</version>
     </versions>
-    <lastUpdated>20120903073920</lastUpdated>
+    <lastUpdated>20130423030419</lastUpdated>
   </versioning>
 </metadata>

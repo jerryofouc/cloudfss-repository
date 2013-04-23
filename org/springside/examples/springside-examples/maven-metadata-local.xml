@@ -3,9 +3,10 @@
   <groupId>org.springside.examples</groupId>
   <artifactId>springside-examples</artifactId>
   <versioning>
+    <release>4.0.0.GA</release>
     <versions>
-      <version>4.0.0.GA-SNAPSHOT</version>
+      <version>4.0.0.GA</version>
     </versions>
-    <lastUpdated>20120903074030</lastUpdated>
+    <lastUpdated>20130423030608</lastUpdated>
   </versioning>
 </metadata>
