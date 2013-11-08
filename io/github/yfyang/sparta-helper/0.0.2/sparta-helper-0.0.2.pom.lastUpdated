@@ -1,0 +1,14 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Nov 08 17:05:16 CST 2013
+https\://repository.cloudera.com/artifactory/public/.lastUpdated=1383901419077
+http\://mvn.hz.netease.com/artifactory/libs-snapshots/.error=Could not transfer artifact io.github.yfyang\:sparta-helper\:pom\:0.0.2 from/to snapshots (http\://mvn.hz.netease.com/artifactory/libs-snapshots)\: Failed to transfer file\: http\://mvn.hz.netease.com/artifactory/libs-snapshots/io/github/yfyang/sparta-helper/0.0.2/sparta-helper-0.0.2.pom. Return code is\: 409 , ReasonPhrase\:Conflict.
+http\://repo.maven.apache.org/maven2/.lastUpdated=1383901358722
+http\://repository.springsource.com/maven/bundles/external/.error=
+http\://repo.maven.apache.org/maven2/.error=
+https\://raw.github.com/jerryofouc/cloudfss-repository/master/.error=
+http\://mvn.hz.netease.com/artifactory/libs-releases/.error=
+@default-http\://mvn.hz.netease.com/artifactory/libs-snapshots/.lastUpdated=1383901516833
+https\://raw.github.com/jerryofouc/cloudfss-repository/master/.lastUpdated=1383901342051
+http\://mvn.hz.netease.com/artifactory/libs-releases/.lastUpdated=1383901339547
+http\://repository.springsource.com/maven/bundles/external/.lastUpdated=1383901343345
+https\://repository.cloudera.com/artifactory/public/.error=
